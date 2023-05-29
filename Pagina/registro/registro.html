@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Modelos-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="registro.css">
+    <script src="https://kit.fontawesome.com/c9fb004c70.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+    <link rel="icon" href="recursos/icono_fabrik.png">
+</head>
+<body>
+    <div id="contenedor_principal">
+        <header id="cabecera">
+            <div id="fondo_cabecera"></div>
+        </header>
+        <nav id="navegador">
+            <div id="contenedor_navegador">
+              <ul class="menu">
+                <li id="inicio"><a href="../Inicio/inicio.html">Inicio</a></li>
+                <li><a href="../Code/code.html">Code</a></li>
+                <li><a href="../150/150.html">150</a></li>
+                <li><a href="../Univesiparty/universiparty.html">Universiparty</a></li>
+                <li><a href="../Row/row.html">Row</a></li>
+                <li id="user"><a href="inicio_sesion.html"><i class="fa-sharp fa-solid fa-bars"></i>&nbsp;Socios</a></li>
+              </ul>
+            </div>
+          </nav>    
+        <section id="cuerpo">
+          <div id="contenedor_registro">
+            <div id="formulario">
+              <?php
+              if(isset($_POST()))
+              ?>
+              <form action="" method="post">
+                <fieldset>
+                  <legend>Registrate</legend>
+                  <div id="contenedor_form">
+                    <div class="izquierda">
+                      <label for="username">Username: </label>
+                      <br>
+                      <label for="password">Contraseña: </label>
+                      <br>
+                      <label for="dni">DNI: </label>
+                      <br>
+                      <label for="nombre">Nombre: </label>
+                      <br>
+                      <label for="apellidos">Apellidos: </label>
+                      <br>
+                      <label for="correo">Correo: </label>
+                      <br>
+                      <label for="fecha_nacimiento">Fecha_nac: </label>
+                      <br>
+                      <label for="telefono">Telefono: </label>
+                      <br>
+                      <label for="terminos">Aceptas lo terminos</label>
+                    </div>
+                    <div class="derecha">
+                      <input type="text" name="username">
+                      <br>
+                      <input type="password" name="password">
+                      <br>
+                      <input type="text" name="dni">
+                      <br>
+                      <input type="text" name="nombre">
+                      <br>
+                      <input type="text" name="apellidos">
+                      <br>
+                      <input type="text" name="correo">
+                      <br>
+                      <input type="date" name="fecha_nacimiento">
+                      <br>
+                      <input type="text" name="telefono">
+                      <br>
+                      <input type="checkbox" name="terminos" required>
+                    </div>
+                  </div>
+                  <input type="submit" nama="enviar" value="Registrar">
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <!--<div id="contenedor_boton_compra">
+            <div id="boton">
+              <a href="" target="_self"><p>Compra Entradas</p></a>
+            </div>
+          </div>-->
+        </section>
+        <footer id="final">
+          <div id="redes">
+            <div class="contenedor_redes"><a href="https://www.facebook.com/fabrikmadrid/?locale=es_ES" target="_blank"><img src="recursos/Facebook_icon.svg.png" id="facebook"></a></div>
+            <div class="contenedor_redes"><a href="https://www.instagram.com/fabrikmadrid/?hl=es" target="_blank"><img src="recursos/instagram.jfif" id="instagram"></a></div>
+            <div class="contenedor_redes"><a href="https://twitter.com/fabrikdiscoteca?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="recursos/twitter.jpeg" id="twitter"></a></div>
+            <div class="contenedor_redes"><a href="https://www.tiktok.com/@fabrikmadrid?lang=es" target="_blank"><img src="recursos/tiktok.png" id="tiktok"></a></div>
+          </div>
+          <div id="mensaje_final"><p id="mensaje1">¡Gracias por su visita!</p><p id="mensaje2">¡Disfruten de las fiestas!</p></div>
+        </footer>
+    </div>
+</body>
+</html>

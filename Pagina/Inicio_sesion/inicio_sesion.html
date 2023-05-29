@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Modelos-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="inicio_sesion.css">
+    <script src="https://kit.fontawesome.com/c9fb004c70.js" crossorigin="anonymous"></script>
+    <title>USER</title>
+    <link rel="icon" href="recursos/icono_fabrik.png">
+</head>
+<body>
+    <div id="contenedor_principal">
+        <header id="cabecera">
+            <div id="fondo_cabecera"></div>
+        </header>
+        <nav id="navegador">
+            <div id="contenedor_navegador">
+              <ul class="menu">
+                <li id="inicio"><a href="../Inicio/inicio.html">Inicio</a></li>
+                <li><a href="../Code/code.html">Code</a></li>
+                <li><a href="../150/150.html">150</a></li>
+                <li><a href="../Univesiparty/universiparty.html">Universiparty</a></li>
+                <li><a href="../Row/row.html">Row</a></li>
+                <li id="user"><a href="inicio_sesion.html"><i class="fa-sharp fa-solid fa-bars"></i>&nbsp;Socios</a></li>
+              </ul>
+            </div>
+          </nav>    
+        <section id="cuerpo">
+          <h1 id="titulo">INICIO DE SECCION</h1>
+          <div id="contenedor_inicio_sesion">
+            <div id="formulario">
+              <form action="" method="post">
+                <fieldset>
+                  <legend>Login</legend>
+                  <div class="con_form">
+                    <label for="nombre">Username:</label>
+                  </div>
+                  <div class="con_form">
+                    <input type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="con_form">
+                    <label for="password">Password:</label>
+                  </div>
+                  <div class="con_form">
+                    <input type="password" name="password" id="password">
+                  </div>
+                  <div class="con_form">
+                    <input type="submit" name="sesion" value="Iniciar_sesion">
+                  </div>
+                </fieldset>
+                <br>
+                <div id="mensaje_form">
+                  <p>
+                    Si no estas registrado, <a href="../registro/registro.html">registrate</a> y unete a nuestra gran familia.
+                    <br>
+                    Para comprar entradas y tener fabulosos descuentos.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--<div id="contenedor_boton_compra">
+            <div id="boton">
+              <a href="" target="_self"><p>Compra Entradas</p></a>
+            </div>
+          </div>-->
+        </section>
+        <footer id="final">
+          <div id="redes">
+            <div class="contenedor_redes"><a href="https://www.facebook.com/fabrikmadrid/?locale=es_ES" target="_blank"><img src="recursos/Facebook_icon.svg.png" id="facebook"></a></div>
+            <div class="contenedor_redes"><a href="https://www.instagram.com/fabrikmadrid/?hl=es" target="_blank"><img src="recursos/instagram.jfif" id="instagram"></a></div>
+            <div class="contenedor_redes"><a href="https://twitter.com/fabrikdiscoteca?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="recursos/twitter.jpeg" id="twitter"></a></div>
+            <div class="contenedor_redes"><a href="https://www.tiktok.com/@fabrikmadrid?lang=es" target="_blank"><img src="recursos/tiktok.png" id="tiktok"></a></div>
+          </div>
+          <div id="mensaje_final"><p id="mensaje1">¡Gracias por su visita!</p><p id="mensaje2">¡Disfruten de las fiestas!</p></div>
+        </footer>
+    </div>
+</body>
+</html>
